@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8"/>
+<title>JS - Estudos de JS</title>
+
+<script>
+    function entrar(){
+      var area = document.getElementById('area')
+      var texto = prompt('Digite seu nome: ')
+
+      /* Validando para o campo texto não ficar vazio.*/ 
+
+      if(texto == '' || texto == null){
+        alert('Digite o seu nome!');
+        area.innerHTML == 'Bem vindo...';
+      } else{
+        area.innerHTML = 'Bem vindo ' + texto
+      }      
+    }
+
+    function entrar2(nome){
+        var area = document.getElementById('area2')
+        var texto = prompt('Qual o seu sobrenome: ')
+
+        area.innerHTML = nome + " " + texto
+
+    }
+
+
+area2
+</script>
+
+
+
+</head>
+<body>
+
+    <!-- Solicitando que o usuário digite o seu nome -->
+    <div id="area">Seja, Bem vindo!!!</div>
+    <button onclick="entrar()">Entar</button>
+
+    <br><br>
+
+    <!-- Solicitando que o usuário digite o seu sobrenome -->
+    <div id="area2">sobrenome</div>
+    <button onclick="entrar2('Rosivaldo')">Entrar</button>
+
+    
+
+</body>
+</html>

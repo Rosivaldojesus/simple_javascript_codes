@@ -2,9 +2,25 @@
 <html lang="pt-br">
 <head>
 <meta charset="utf-8"/>
-<title>HTML5 – Estrutura básica</title>
-<script src="filter.js"></script>
+<title>JS - Estudos de JS</title>
+
+<script>
+//while = enquanto
+let texto = '';
+
+let x = 0;
+while(x < 10){
+    texto += document.write("<br>O valor de x é: " + x);
+    x++;
+}
+document.getElementById("while").innerHTML = texto;
+
+</script>
+
 </head>
-<body>
-</body>
+    <body>
+    
+        <p id="while"></p>
+
+    </body>
 </html>
